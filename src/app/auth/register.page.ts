@@ -5,25 +5,7 @@ import { Router } from '@angular/router';
 
 @Component({
   template: `
-  <form class="example-form m-5" #f="ngForm" (ngSubmit)="onSubmit()">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Firstname</mat-label>
-    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
-  </mat-form-field>
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Firstname</mat-label>
-    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
-  </mat-form-field>
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Firstname</mat-label>
-    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
-  </mat-form-field>
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Firstname</mat-label>
-    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
-  </mat-form-field>
 
-</form>
 <!-- ---- -->
 
     <form class="m-5" #f="ngForm" (ngSubmit)="onSubmit()">
@@ -50,15 +32,8 @@ import { Router } from '@angular/router';
 
   `,
   styles: [
-    .example-form {
-      min-width: 150px;
-      max-width: 500px;
-      width: 100%;
-    }
 
-    .example-full-width {
-      width: 100%;
-    }
+
 
   ]
 })

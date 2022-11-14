@@ -24,6 +24,8 @@ import { RegisterPage } from './auth/register.page';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
+
 
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -101,7 +103,9 @@ const routes:Route[] = [
     MatFormFieldModule,
     MatListModule,
     NgbModule,
-    MatInputModule
+    MatInputModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

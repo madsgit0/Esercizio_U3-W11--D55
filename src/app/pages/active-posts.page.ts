@@ -4,14 +4,23 @@ import { PostsService } from '../posts.service';
 
 @Component({
   template: `
-    <div class="container mt-5">
-      <div *ngFor="let post of posts; let i = index">
+   <div *ngFor="let post of posts; let i = index">
+      <div class="container mt-5">
+        <mat-card class="example-card">
+          <mat-card-content *ngIf="post.active" [post]="post" >
+              <button mat-raised-button (click)="onInactivePost(post.id,i)" class="btn btn-primary" >Disattiva </button>
+              <button mat-button [routerLink]="['/active-posts',post.id]" routerLinkActive="router-link-active"  class="btn btn-primary ms-3" >Dettagli </button>
+          </mat-card-content>
+        </mat-card>
+      </div>
+
+      <!-- <div *ngFor="let post of posts; let i = index">
         <app-post-card *ngIf="post.active" [post]="post" >
-        <button (click)="onInactivePost(post.id,i)" class="btn btn-primary" >Disattiva </button>
-        <button [routerLink]="['/active-posts',post.id]" routerLinkActive="router-link-active"  class="btn btn-primary ms-3" >Dettagli </button>
+        <button mat-raised-button (click)="onInactivePost(post.id,i)" class="btn btn-primary" >Disattiva </button>
+        <button mat-button [routerLink]="['/active-posts',post.id]" routerLinkActive="router-link-active"  class="btn btn-primary ms-3" >Dettagli </button>
         </app-post-card>
       </div>
-    </div>
+    </div> -->
 
   `,
   styles: [],
