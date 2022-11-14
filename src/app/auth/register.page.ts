@@ -5,20 +5,30 @@ import { Router } from '@angular/router';
 
 @Component({
   template: `
-  <form class="example-form">
+  <form class="example-form m-5" #f="ngForm" (ngSubmit)="onSubmit()">
   <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" value="Sushi">
+    <mat-label>Firstname</mat-label>
+    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Firstname</mat-label>
+    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Firstname</mat-label>
+    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
+  </mat-form-field>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Firstname</mat-label>
+    <input matInput type="text" ngModel name="firstname" class="form-control" id="firstname" >
   </mat-form-field>
 
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field>
 </form>
+<!-- ---- -->
 
     <form class="m-5" #f="ngForm" (ngSubmit)="onSubmit()">
   <div class="mb-3">
+
     <label for="firstname" class="form-label">Firstname</label>
     <input type="text" ngModel name="firstname" class="form-control" id="firstname" >
   </div>
@@ -40,6 +50,15 @@ import { Router } from '@angular/router';
 
   `,
   styles: [
+    .example-form {
+      min-width: 150px;
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .example-full-width {
+      width: 100%;
+    }
 
   ]
 })

@@ -12,11 +12,6 @@ import { PostsService } from '../posts.service';
         </app-post-card>
       </div>
     </div>
-    <mat-list role="list">
-  <mat-list-item role="listitem">Item 1</mat-list-item>
-  <mat-list-item role="listitem">Item 2</mat-list-item>
-  <mat-list-item role="listitem">Item 3</mat-list-item>
-</mat-list>
 
   `,
   styles: [],
